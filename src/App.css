@@ -1,0 +1,128 @@
+/* General Styles */
+.wordle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.wordle-container.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Toggle Button */
+.toggle-mode {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+}
+
+.toggle-mode:hover {
+  background-color: #555;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+/* Letter Cells */
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  border: 2px solid #ccc;
+  text-transform: uppercase;
+  background-color: #ddd;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Colors for Feedback */
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: goldenrod;
+}
+
+.gray {
+  background-color: gray;
+}
+
+/* Flip Animation */
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+
+/* Input Box */
+.input-box {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+/* Submit & Restart Buttons */
+.button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+/* Game Over Message */
+.game-over {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.message {
+  font-size: 20px;
+  font-weight: bold;
+}
