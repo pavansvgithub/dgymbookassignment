@@ -40,7 +40,7 @@ This project is a simple Wordle clone built using React. It allows players to gu
    ```sh
    npm start
    ```
-5. Open [http://localhost:3000](http://localhost:3000) to play the game.
+5. Open [http://localhost:5173/](http://localhost:3000) to play the game.
 
 ## How to Play
 
